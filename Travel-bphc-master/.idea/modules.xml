@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Travel@Bphc.iml" filepath="$PROJECT_DIR$/Travel@Bphc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Travel-bphc-master.iml" filepath="$PROJECT_DIR$/Travel-bphc-master.iml" />
+      <module fileurl="file://D:\Hackathon\Travel-bphc-master\Travel@Bphc.iml" filepath="D:\Hackathon\Travel-bphc-master\Travel@Bphc.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Hackathon\Travel-bphc-master\app\app.iml" filepath="D:\Hackathon\Travel-bphc-master\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crux.pratd.travelbphc.CreatePlan">
+    tools:context="com.example.user.smartmandi.MainActivity">
 
     <Button
         android:id="@+id/Done"
@@ -74,42 +74,55 @@
         android:id="@+id/Product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:text="Product:"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/chooseProduct"
+        tools:layout_editor_absoluteX="17dp"
         tools:layout_editor_absoluteY="113dp" />
-
-    <EditText
-        android:id="@+id/chooseProduct"
-        android:layout_width="276dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center_vertical"
-        android:hint="Product name"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chooseDate" />
 
     <TextView
         android:id="@+id/Quantity"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
         android:text="Quantity(tons):"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/chooseProduct"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="162dp" />
 
     <EditText
         android:id="@+id/chooseQuantity"
         android:layout_width="242dp"
         android:layout_height="20dp"
-        android:layout_marginTop="24dp"
         android:hint="in tons"
-        app:layout_constraintTop_toBottomOf="@+id/chooseProduct"
-        tools:layout_editor_absoluteX="126dp" />
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <TextView
+        android:id="@+id/Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Expected rate(₹/ton)"
+        app:layout_constraintEnd_toStartOf="@+id/chooseRate"
+        app:layout_constraintTop_toBottomOf="@+id/chooseQuantity" />
+
+    <EditText
+        android:id="@+id/chooseRate"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintTop_toBottomOf="@+id/chooseQuantity"
+        tools:layout_editor_absoluteX="182dp" />
+
+    <Spinner
+        android:id="@+id/chooseProduct"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:hint="select one"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="113dp" />
 
 </android.support.constraint.ConstraintLayout>
